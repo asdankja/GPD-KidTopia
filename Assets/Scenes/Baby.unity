@@ -314,8 +314,6 @@ MonoBehaviour:
   Baby: {fileID: 0}
   SpawnPoint: {fileID: 0}
   window: {fileID: 0}
-  eventWindow: {fileID: 782954142}
-  statText: {fileID: 0}
 --- !u!114 &460024195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +543,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597399420}
   m_CullTransparentMesh: 1
+--- !u!1 &759181912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759181913}
+  - component: {fileID: 759181917}
+  - component: {fileID: 759181915}
+  - component: {fileID: 759181914}
+  - component: {fileID: 759181919}
+  - component: {fileID: 759181918}
+  m_Layer: 0
+  m_Name: Baby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759181913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1856953972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759181914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391c9bfb6f2fd314b9aca5bcf8803b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 1
+  isWalking: 0
+  walkTime: 3
+  waitTime: 1
+--- !u!50 &759181915
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!212 &759181917
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1749164395
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b3c6bc6b05e1a1745af421d5660149b2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &759181918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1908737517d4de140906ebfc3eab3b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intelligence: 0
+  charisma: 0
+  health: 0
+--- !u!114 &759181919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759181912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057f3b48cb52bee4ebf59fd779ba8c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &782954142
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &782954143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -744,7 +894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &860717738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -999,7 +1149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Send the child to the hospital to be treated
+  m_text: 'Button Button Button Button '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1132,8 +1282,6 @@ MonoBehaviour:
   Baby: {fileID: 0}
   SpawnPoint: {fileID: 0}
   window: {fileID: 860717737}
-  eventWindow: {fileID: 0}
-  statText: {fileID: 0}
 --- !u!114 &1041480494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,7 +1388,7 @@ GameObject:
   - component: {fileID: 1094764496}
   - component: {fileID: 1094764495}
   - component: {fileID: 1094764494}
-  - component: {fileID: 1094764497}
+  - component: {fileID: 1094764493}
   m_Layer: 5
   m_Name: ButtonR
   m_TagString: Untagged
@@ -1269,6 +1417,21 @@ RectTransform:
   m_AnchoredPosition: {x: -29.1, y: 20.7}
   m_SizeDelta: {x: 78.100006, y: 49.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1094764493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094764491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a8eaa127aa96044952711b2c5604e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Baby: {fileID: 0}
+  SpawnPoint: {fileID: 0}
+  window: {fileID: 0}
 --- !u!114 &1094764494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,7 +1476,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094764497}
+      - m_Target: {fileID: 1094764493}
         m_TargetAssemblyTypeName: Ui, Assembly-CSharp
         m_MethodName: RightButton
         m_Mode: 1
@@ -1363,23 +1526,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094764491}
   m_CullTransparentMesh: 1
---- !u!114 &1094764497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094764491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a8eaa127aa96044952711b2c5604e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Baby: {fileID: 0}
-  SpawnPoint: {fileID: 0}
-  window: {fileID: 0}
-  eventWindow: {fileID: 782954142}
-  statText: {fileID: 0}
 --- !u!1 &1275403139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,73 +1661,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275403139}
   m_CullTransparentMesh: 1
---- !u!1 &1301241420 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6519678311208106526, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-  m_PrefabInstance: {fileID: 1322662292}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1301241421 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-  m_PrefabInstance: {fileID: 1322662292}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1322662292
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1856953972}
-    m_Modifications:
-    - target: {fileID: 6519678311208106526, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_Name
-      value: Baby
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6519678311208106527, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cad9c49b4fe3a4846811da21bf407a24, type: 3}
 --- !u!1 &1356503401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,7 +1830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use Tiger Balm Repercussion: $0 Cost'
+  m_text: 'Button Button Button Button '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1886,7 +1965,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your Child has gotten into an accident!
+  m_text: 'New Text New Text New Text New Text New New Text New Text New Text New
+    Text New New Text New Text New Text New Text New '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1992,7 +2072,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1301241421}
+  - {fileID: 759181913}
   - {fileID: 1356503402}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2009,7 +2089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf0c49c3faee174bbb03240775d5c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 782954142}
 --- !u!1 &1860093205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,7 +2119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2131,11 +2209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a8eaa127aa96044952711b2c5604e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Baby: {fileID: 1301241420}
+  Baby: {fileID: 759181912}
   SpawnPoint: {fileID: 1856953972}
   window: {fileID: 860717737}
-  eventWindow: {fileID: 782954142}
-  statText: {fileID: 597399422}
 --- !u!114 &1893528464
 MonoBehaviour:
   m_ObjectHideFlags: 0
