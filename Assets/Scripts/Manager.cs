@@ -34,6 +34,8 @@ public class Manager : MonoBehaviour
     {
         wBaby.SetActive(false);
         wRandom.SetActive(false);
+        wJob.SetActive(false);
+        wShop.SetActive(false);
     }
     public void LeftButton()
     {
