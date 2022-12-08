@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6519678311208106524}
   - component: {fileID: 6519678311208106521}
   - component: {fileID: -4714684938000619779}
+  - component: {fileID: 8445507011529466385}
   m_Layer: 0
   m_Name: Baby
   m_TagString: Untagged
@@ -116,7 +117,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519678311208106526}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 391c9bfb6f2fd314b9aca5bcf8803b55, type: 3}
   m_Name: 
@@ -149,4 +150,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28900791994552e4bbf703a2a9752d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  babies: []
+  intelligence: 0
+  charisma: 0
+  health: 0
+  life: 70
+--- !u!114 &8445507011529466385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519678311208106526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda16fce0792fea4db49092c5e6749bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  startWaitTime: 5
+  moveSpot: []

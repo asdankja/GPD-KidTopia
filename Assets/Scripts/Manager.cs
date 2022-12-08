@@ -7,6 +7,7 @@ public class Manager : MonoBehaviour
 {
     public GameObject Baby;
     public Transform SpawnPoint;
+    public Transform[] BabyMove;
 
     public GameObject wBaby;
     public GameObject wRandom;
@@ -27,6 +28,8 @@ public class Manager : MonoBehaviour
     public void SpawnBaby()
     {
         GameObject gO = (GameObject)Instantiate(Baby, SpawnPoint.position, Quaternion.identity);
+        Crawl crawl = gO.GetComponent<Crawl>();
+        crawl.moveSpot = BabyMove;
         statText.text = "Int: " + gO.GetComponent<BabyManager>().intelligence + " / " + "Cha: " + gO.GetComponent<BabyManager>().charisma + " / " + "Health: " + gO.GetComponent<BabyManager>().health;
         wBaby.SetActive(true);
     }
@@ -49,4 +52,6 @@ public class Manager : MonoBehaviour
     {
         wShop.SetActive(true);
     }
+
+
 }
